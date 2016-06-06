@@ -1,5 +1,28 @@
 # Changelog
 
+## v3.1.3
+
+- Removed all variance selectors from the JSON database. Thanks @roberterdin !
+
+## v3.1.2
+
+- Additions and updates to the emoji database (victory hand now supports fitzpatrick, adds Saint Vincent Grenadines' flag, add the regional indicator symbols). Thanks @lologist !
+- Force the database to be loaded in UTF-8.
+- Enable the extension of the `EmojiParser` class.
+
+## v3.1.1
+
+- Add the ability to provide a custom `EmojiTransformer` that will enable developers to add their custom emoji replacement methods. Thanks @freva !
+
+## v3.1.0
+
+- Add fitzpatrick support for 👃 ("nose") and 👂 ("ear")
+- Fix duplicated "sunglasses" alias
+- Performance improvements (using a Trie structure)
+- Parsing support for multiple emojis (such as "family_man_woman_boy")
+- Fix `EmojiManager.getAll()` that returned some duplicates
+- Use a BufferedReader to load the database
+
 ## v3.0.0
 
 Update the emoji database to support the additions of iOS 9.1
